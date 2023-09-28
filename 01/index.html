@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log('oi')
+        class Pessoa{
+            constructor(nome, idade) {
+                this.nome = nome
+                this.idade = idade
+            }
+            imprimirDados(){
+                console.log(`nome: ${this.nome}, idade: ${this.idade}`)
+            }
+        }
+        let pessoa1 = new Pessoa('fabio', 87)
+        pessoa1.imprimirDados()
+    </script>
+</body>
+</html>

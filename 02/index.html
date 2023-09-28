@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="visor" disabled>
+
+        <div class="teclado">
+            <!-- Números de 7 a 9 -->
+            <button class="numero" onclick="calculadora.adicionarNumero('7')">7</button>
+            <button class="numero" onclick="calculadora.adicionarNumero('8')">8</button>
+            <button class="numero" onclick="calculadora.adicionarNumero('9')">9</button>
+
+            <!-- Botão para operação de divisão -->
+            <button class="operacao" onclick="calculadora.adicionarOperacao('/')">/</button>
+
+            <!-- Números de 4 a 6 -->
+            <button class="numero" onclick="calculadora.adicionarNumero('4')">4</button>
+            <button class="numero" onclick="calculadora.adicionarNumero('5')">5</button>
+            <button class="numero" onclick="calculadora.adicionarNumero('6')">6</button>
+
+            <!-- Botão para operação de multiplicação -->
+            <button class="operacao" onclick="calculadora.adicionarOperacao('*')">*</button>
+
+            <!-- Números de 1 a 3 -->
+            <button class="numero" onclick="calculadora.adicionarNumero('1')">1</button>
+            <button class="numero" onclick="calculadora.adicionarNumero('2')">2</button>
+            <button class="numero" onclick="calculadora.adicionarNumero('3')">3</button>
+
+            <!-- Botão para operação de subtração -->
+            <button class="operacao" onclick="calculadora.adicionarOperacao('-')">-</button>
+
+            <!-- Número 0 -->
+            <button class="numero" onclick="calculadora.adicionarNumero('0')">0</button>
+
+            <!-- Botão para limpar o visor -->
+            <button class="operacao" onclick="calculadora.limpar()">C</button>
+
+            <!-- Botão para operação de adição -->
+            <button class="operacao" onclick="calculadora.adicionarOperacao('+')">+</button>
+
+            <!-- Botão para calcular o resultado -->
+            <button class="operacao" onclick="calculadora.resultado()">=</button>
+            
+        </div>
+
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
